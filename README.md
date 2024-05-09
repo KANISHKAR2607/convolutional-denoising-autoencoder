@@ -50,7 +50,7 @@ To develop a convolutional autoencoder for image denoising application.
 ## PROGRAM
 
 > [!Note]
-> Developed By : Sri Varshan P (212222240104)
+> Developed By : KANISHKAR M (212222240044)
 
 ```py
 
@@ -92,7 +92,7 @@ x_train_noisy = np.clip(x_train_noisy, 0., 1.)
 x_test_noisy = np.clip(x_test_noisy, 0., 1.)
 ```
 ```py
-print('Developed by: Sri Varshan')
+print('Developed by: KANISHKAR M')
 n = 10
 plt.figure(figsize=(20, 2))
 for i in range(1, n + 1):
@@ -155,7 +155,7 @@ autoencoder.fit(x_train_noisy, x_train_scaled,
                 validation_data=(x_test_noisy, x_test_scaled))
 ```
 ```py
-print('Developed By Sri varshan P')
+print('Developed By KANISHKAR M')
 metrics = pd.DataFrame(autoencoder.history.history)
 metrics[['loss','val_loss']].plot()
 ```
